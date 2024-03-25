@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-p6np5C8a4buxufvaz+e6+5MUZQ7TFs70QbB+Z7ryH12L3ma5uO+LGMcaX1LqzOTumzXZa5Pw2q6vkVq4Cgg1hA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      background-color: black;
+      background-size: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    .logo {
+      position: fixed;
+      top: 5px;
+      right: 5px;
+      width: 60px;
+      height: auto;
+      opacity: 0.4;
+      z-index: 9999;
+    }
+
+    .header-img {
+      position: relative;
+      width: 100%;
+      display: block;
+    }
+
+    .header-overlay {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: #fff;
+    }
+
+    .header-overlay h2 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    .header-overlay p {
+      margin: 0;
+    }
+
+    .header-overlay .college-name {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      border: 2px solid white;
+      color: #fff;
+      position: relative;
+      transition: all 0.3s ease; 
+    }
+
+    .container.small {
+      margin: 20px auto; 
+      padding: 10px; 
+    }
+
+    .container > *:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+    }
+
+    p {
+      text-align: center;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .details {
+      text-align: center;
+    }
+
+    .details h2 {
+      color: #007bff;
+    }
+
+    .details p {
+      margin-top: 10px;
+    }
+
+    .date {
+      text-align: center;
+      color: #ccc;
+      margin-top: 20px;
+    }
+
+    .invitation-img {
+      display: block;
+      margin: 20px auto;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .line {
+      width: 100%;
+      border-top: 1px solid #007bff;
+      margin: 20px 0;
+    }
+
+    .scroll-down-btn {
+      display: none; /* Hide scroll button by default */
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    /* Additional animations */
+    @keyframes scale {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+    }
+
+    @keyframes slide {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    .container {
+      animation: scale 5s ease-in-out infinite alternate;
+    }
+
+    .btn-container {
+      animation: slide 3s ease-in-out infinite alternate;
+    }
+
+    /* Media Queries for Mobile View */
+    @media screen and (max-width: 600px) {
+      .container {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+      }
+
+      .header-overlay h2 {
+        font-size: 2em;
+      }
+
+      .header-overlay .college-name {
+        font-size: 1.2em;
+      }
+
+      .invitation-img {
+        margin: 10px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <img class="logo" src="pvplogo.png" alt="Your Logo">
+  <div class="header-img">
+    <img src="pic1.jpg" alt="Farewell Header Image" style="width: 100%;">
+    <div class="header-overlay">
+      <h2>Farewell Party Invitation</h2>
+      <p class="college-name">Prasad V. Potluri Siddhartha Institute of Technology
+      </p>
+      <p>Celebrating the graduating class</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Farewell of IT Graduates[2020-2024]</h1>
+    <p><strong>To Seniors,</strong></p>
+    <p>We cordially invite you to join us for a memorable farewell party celebrating the graduating class!</p>
+    <img class="invitation-img" src="pvplogo.png" alt="Farewell Invitation Image">
+    <div class="date">Date:28March2024</div>
+    <div class="time"><p>Time:5:00 PM - 7:00 PM</p></div>
+    <div class="line"></div> 
+    <div class="details">
+      <h2>Event Details</h2>
+      <p><strong>Venue:</strong> PVPSIT Open Auditorium</p>
+      <u><p><strong>Agenda:</strong> </u>
+        <ul>
+        <p>Welcome Speech</ul></p>
+            <p>Student Performances</p>
+            <p>Awards Ceremony</p>
+        </ul>
+      </p>
+      <p><strong>Special Activities:</strong> Dance Performances,Games</p>
+    </div>
+  </div>
+  <button class="scroll-down-btn" onclick="scrollToBottom()">
+    <i class="fas fa-chevron-down"></i>
+  </button>
+  <footer>
+    &copy; 2024 College Farewell Invitation
+  </footer>
+
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.querySelector('.scroll-down-btn').style.opacity = "1";
+      } else {
+        document.querySelector('.scroll-down-btn').style.opacity = "0";
+      }
+    }
+
+    function scrollToBottom() {
+      window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: 'smooth'
+      });
+    }
+  </script>
+</body>
+</html>
